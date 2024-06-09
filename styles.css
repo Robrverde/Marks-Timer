@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    position: relative;
+    overflow: auto;
+    height: 90vh;
+}
+
+.sticky-controls {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+#timer {
+    font-size: 3em;
+    margin: 20px 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    font-size: 1em;
+    padding: 10px 20px;
+    margin: 5px;
+}
+
+.marks {
+    margin-top: 20px;
+    text-align: left;
+    overflow-y: auto;
+}
+
+.marks ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.marks li {
+    margin: 5px 0;
+}
+
+.marks li.highlight {
+    color: green;
+}
+
+.marks li.correction {
+    color: red;
+}

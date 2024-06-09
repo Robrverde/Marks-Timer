@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast Time Marker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Podcast Time Marker</h1>
+        <div id="timer">00:00:00</div>
+        <div class="buttons">
+            <button id="startStopBtn">Start</button>
+            <button id="resetBtn">Reset</button>
+            <button id="highlightBtn">Highlight</button>
+            <button id="correctionBtn">Corrección</button>
+            <button id="savePdfBtn">Guardar PDF</button>
+        </div>
+        <div class="pdf-title">
+            <input type="text" id="pdfTitle" placeholder="Ingrese el título del PDF">
+        </div>
+        <div class="marks">
+            <h2>Highlights</h2>
+            <ul id="highlightList"></ul>
+            <h2>Correcciones</h2>
+            <ul id="correctionList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
